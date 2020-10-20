@@ -48,7 +48,12 @@ font-size: 15px;
 h2{
     color:white;
     font-family: futura, sans-serif;
-    font-size: 15px;
+    font-size: 25px;
+}
+h3{
+  color:#fee66b;
+  font-family: futura, sans-serif;
+  font-size: 15px;
 }
 
 p{
@@ -70,7 +75,10 @@ p{
 .col{
    width:100%;
 }
-
+.cursor{
+  background-color:#06bdcd;
+}
+}
 footer{
     text-align: center;
     background-color: #fee66b
