@@ -2,7 +2,7 @@
 
 body{
   background: #f598a4;
-  font-size: 1em;
+  font-size: 16px;
   margin:0;
   padding:0;
 }
@@ -18,8 +18,8 @@ h1{
 
 #logo {
     /* ------ MAX WIDTH ------ */
-    max-width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 25px auto;
     display: block;
 }
 
@@ -42,23 +42,23 @@ nav a{
 }
 h1{
 color:black;
-font-family: futura, sans-serif;
+font-family: futura,'Nunito', sans-serif;
 font-size: 15px;
 }
 h2{
     color:white;
-    font-family: futura, sans-serif;
+    font-family: futura,'Nunito', sans-serif;
     font-size: 25px;
 }
 h3{
   color:#fee66b;
-  font-family: futura, sans-serif;
+  font-family: futura,'Nunito', sans-serif;
   font-size: 15px;
 }
 
 p{
     color:black;
-    font-family: futura, sans-serif;
+    font-family: futura,'Nunito', sans-serif;
     font-size: 13px;
 }
 
@@ -92,6 +92,9 @@ footer a{
 
 @media only screen and (min-width:700px){
     /* ---- Desktop styles below ---- */
+    #logo{
+      width:50%;
+    }
     .col{
         width:45%;
         float:left;
@@ -101,7 +104,7 @@ footer a{
         display: table;
         clear:both;
         content:"";
-    }
+        }
 }
 @media only screen and (min-width:1000px){
     /* ---- Desktop styles below ---- */
