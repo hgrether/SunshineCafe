@@ -15,13 +15,6 @@
             <a href="#">Gallery</a>
             <a href="#">Contact</a>
         </nav>
-        <!DOCTYPE html>
-        <html lang="en" dir="ltr">
-          <head>
-            <meta charset="utf-8">
-            <title></title>
-          </head>
-          <body>
 
           <style>
             /* START MOBILE FORM STYLES */
@@ -104,25 +97,25 @@
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img src="picture1.jpg" style="width:100%">
-    <div class="text">Caption Text</div>
+    <div class="text">Sunshine Cafe has been in buisness for since year 2000. We Pride ourselves on our hospitality and our delicious drinks.</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="picture2.jpg" style="width:100%">
-    <div class="text">Caption Two</div>
+    <div class="text">Sunshine Cafe offers a variety of food types to their customers. You can find various breakfast items incliding fruit parfaits in available in many flavors.</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="picture3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">Many people come to Sushine Cafe and enjoy breakfast croissants with their coffee on their morning commute to work.</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
     <img src="picture4.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="text">Coffee is our specialty at Sunshine Cafe. Weather it is a late, cappuccino, or frappuccino we have you covered, with a wide variety of flavors and ingredients.</div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -141,5 +134,34 @@
         <footer>
             <h1>&copy; 2020 Sunshine Cafe | <a href="#">Back to top</a></h1>
         </footer>
+        <script src="app.js"></script>
+        <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
     </body>
 </html>
