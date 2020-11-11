@@ -1,5 +1,3 @@
-/*Some colors based on: https://www.w3schools.com/colors/colors_palettes.asp */
-
 body{
   background: #f598a4;
   font-size: 16px;
@@ -23,7 +21,6 @@ h1{
     display: block;
 }
 
-/* Grid CSS on W3 Schools: https://www.w3schools.com/cssref/pr_grid-auto-flow.asp */
 nav{
     display: grid;
     /* Change previous grid */
@@ -61,12 +58,18 @@ p{
     font-family: futura,'Nunito', sans-serif;
     font-size: 13px;
 }
-
 #wrapper{
     margin: 15px auto;
     width:90%;
 }
+.submit{
+  color:white;
+  font-family: futura,'Nunito', sans-serif;
+  font-size: 15px;
+  background-color: #06bdcd;
 
+
+}
 .center{
     display: block;
     margin: 0 auto;
@@ -77,11 +80,13 @@ p{
 }
 .cursor{
   background-color:#06bdcd;
+  color:white;
+  font-family: futura,'Nunito', sans-serif;
+  font-size: 15px;
 }
 footer{
     text-align: center;
-    background-color: #fee66b
-;
+    background-color: #fee66b;
     padding:20px 0;
 }
 footer a{
@@ -89,7 +94,7 @@ footer a{
     text-decoration: none;
 }
 .text{
-  color:black;
+  color:white;
   font-family: futura,'Nunito', sans-serif;
   font-size: 13px;
 }
